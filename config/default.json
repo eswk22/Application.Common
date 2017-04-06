@@ -1,0 +1,39 @@
+{
+    "environment" : "development",
+    "language" : "en",
+    "myQueues" : [{
+        "Exchange" : "uniqueRay",
+        "Queue" : "Worker"
+    }],
+    "RabbitMQ" : {
+        "host" : "localhost",
+        "port" : 0,
+        "username" : "guest",
+        "password" : "guest",
+        "connectionTimeout" : 100000,
+        "ssl": { "enabled" : true,
+                 "keyFile" : "/path/to/key/file",
+                 "certFile" : "/path/to/cert/file",
+                 "caFile" : "/path/to/cacert/file",
+                 "rejectUnauthorized" : true
+               },
+        "Exchanges" : [{
+                "name" : "uniqueRay",
+                "type" : "direct",
+                "durable" : true,
+                "Queues" : [{
+                                "name" : "Worker",
+                                "durable" : true,
+                                "Acknowledge" : true,
+                                "Keyword" : "Worker"
+                            },
+                            {
+                                "name" : "RemoteWorker",
+                                "durable" : true,
+                                "Acknowledge" : true,
+                                "Keyword" : "NETCOOL"
+                            }
+                        ]
+        }]
+    }
+}

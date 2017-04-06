@@ -1,0 +1,59 @@
+{
+  "name": "application.common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/js/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eswk22/Application.Common.git"
+  },
+  "author": "Eswaran Krishnamoorthy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eswk22/Application.Common/issues"
+  },
+  "homepage": "https://github.com/eswk22/Application.Common#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/hammerjs": "^2.0.34",
+    "@types/jasmine": "^2.5.46",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.11",
+    "@types/source-map": "^0.5.0",
+    "@types/uglify-js": "^2.6.28",
+    "@types/webpack": "^2.2.12",
+    "chai": "^3.5.0",
+    "clear": "0.0.1",
+    "connect": "^3.4.0",
+    "del": "^2.2.2",
+    "dts-generator": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-docco": "0.0.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-typescript": "^3.1.6",
+    "gulp-typescript-compiler": "^1.0.1",
+    "gulp-util": "^3.0.8",
+    "merge2": "^1.0.3",
+    "method-override": "^2.3.5",
+    "npm-link-shared": "^0.4.0",
+    "run-sequence": "^1.2.2",
+    "ts-node": "^3.0.2",
+    "winston": "^2.3.1"
+  },
+  "dependencies": {
+    "tslib": "^1.6.0",
+    "tslint": "^4.5.1",
+    "tslint-loader": "^3.4.3",
+    "typedoc": "^0.5.9",
+    "typescript": "^2.2.1"
+  },
+  "scripts": {
+    "test": "mocha --opts mocha.opts && rm -rf test",
+    "test:auto": "mocha --opts mocha.opts --watch"
+  }
+}
